@@ -31,7 +31,40 @@
  
 
 -->
+    <style>
+        .modal-dialog {
+            max-width: 800px;
+            margin: 30px auto;
+        }
+
+        .modal-body {
+            position: relative;
+            padding: 0px;
+        }
+
+        .btn-close {
+            position: absolute;
+            /* right: -30px; */
+            top: 0;
+        }
+
+        @media (max-width: 600px) {
+            #main_title {
+                font-size: 20px !important;
+            }
+
+            #main_description {
+                font-size: 13px !important;
+            }
+
+            #crew_desc {
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
+
 
 <body>
 
@@ -39,13 +72,13 @@
 
         <section class="hero" id="hero">
             <div class="heroText">
-                <h1 class="text-white mt-5 mb-lg-4" style=" font-size: 40px !important; margin-bottom: 0px !important;"
-                    data-aos="zoom-in" data-aos-delay="800">
+                <h1 class="text-white mt-5 mb-lg-4" style="   margin-bottom: 0px !important;" data-aos="zoom-in"
+                    data-aos-delay="800" id="main_title">
                     PHOTOMANJI FILMS
                 </h1>
 
-                <p class="text-secondary-white-color" style=" font-size: 18px !important; margin-top: 0px !important;"
-                    data-aos="fade-up" data-aos-delay="1000">
+                <p class="text-secondary-white-color" style=" font-size: 18px  ; margin-top: 0px !important;"
+                    data-aos="fade-up" data-aos-delay="1000" id="main_description">
                     Wedding/Event Film Makers from <strong class="custom-underline"><a
                             class="text-secondary-white-color" href="https://www.facebook.com/photomanjifilms"
                             target="_blank">NUEVA
@@ -54,7 +87,7 @@
             </div>
 
             <div class="videoWrapper">
-                <video autoplay="true" loop="" muted="" class="custom-video" poster="">
+                <video autoplay="true" loop="" muted="" class="custom-video" poster="images/photomanji/manji pic.jpg">
                     <source src="videos/Photomanji ShowReel_2.mp4" type="video/mp4">
 
                     Your browser does not support the video tag.
@@ -81,11 +114,12 @@
                             <a class="nav-link" href="#hero">Home</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#about">Our Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
 
                         <li class="nav-item">
@@ -165,7 +199,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-12 p-0">
-                        <img src="images/elena-rabkina-eVVzwsNhNf4-unsplash.jpg" class="img-fluid about-image" alt="">
+                        <img src="images/photomanji/manji pic.jpg" class="img-fluid about-image" alt="">
                     </div>
 
                     <div class="col-lg-3 col-12 bg-dark">
@@ -174,7 +208,7 @@
                             <h3 class="text-white mb-3" data-aos="fade-up">We’re - idealists and strategic thinkers.
                             </h3>
 
-                            <p class="text-secondary-white-color" data-aos="fade-up">Over six years in the video
+                            <p class="text-secondary-white-color" data-aos="fade-up">Over 3 years in the photo/video
                                 business</p>
 
                             <div class="mt-3 custom-links">
@@ -198,7 +232,8 @@
                                     <div class="team-thumb bg-warning">
                                         <h3 class="text-white mb-0">Denneb Gomez</h3>
 
-                                        <p class="text-secondary-white-color mb-0">Owner/Creative Director</p>
+                                        <p class="text-secondary-white-color mb-0" id="crew_desc">Owner/Creative
+                                            Director</p>
                                     </div>
                                 </div>
 
@@ -210,7 +245,8 @@
                                     <div class="team-thumb bg-info">
                                         <h3 class="text-white mb-0">Christian Conferso</h3>
 
-                                        <p class="text-secondary-white-color mb-0">Main Photographer/Cinematographer</p>
+                                        <p class="text-secondary-white-color mb-0" id="crew_desc">Main
+                                            Photographer/Cinematographer</p>
                                     </div>
                                 </div>
 
@@ -220,7 +256,8 @@
                                     <div class="team-thumb bg-danger">
                                         <h3 class="text-white mb-0">Rence Ramos</h3>
 
-                                        <p class="text-secondary-white-color mb-0">Main Cinematographer</p>
+                                        <p class="text-secondary-white-color mb-0" id="crew_desc">Main Cinematographer
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -253,38 +290,11 @@
                         <h2 class="mb-5 text-center" data-aos="fade-up">Portfolio</h2>
                     </div>
 
-                    <div class="col-lg-6 col-12">
-                        <div class="portfolio-thumb mb-5" data-aos="fade-up">
-                            <a href="images/portfolio/visuals-Y4qzW3AsvqI-unsplash.jpeg" class="image-popup">
-                                <img src="images/portfolio/visuals-Y4qzW3AsvqI-unsplash.jpeg"
-                                    class="img-fluid portfolio-image" alt="">
-                            </a>
-
-                            <div class="portfolio-info">
-                                <h4 class="portfolio-title mb-0">Effortless</h4>
-
-                                <p class="text-danger">Branding</p>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-thumb" data-aos="fade-up">
-                            <a href="images/portfolio/severin-candrian-nn3uIZqmUtE-unsplash.jpeg" class="image-popup">
-                                <img src="images/portfolio/severin-candrian-nn3uIZqmUtE-unsplash.jpeg"
-                                    class="img-fluid portfolio-image" alt="">
-                            </a>
-
-                            <div class="portfolio-info">
-                                <h4 class="portfolio-title mb-0">Health technology</h4>
-
-                                <p class="text-success">Art Direction</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12">
+                    <!-- image start -->
+                    <div class="col-lg-3 col-12">
                         <div class="portfolio-thumb mt-5 mt-lg-0 mb-5" data-aos="fade-up">
                             <a href="images/portfolio/tyler-nix-Y1drF0Y3Oe0-unsplash.jpeg" class="image-popup">
-                                <img src="images/portfolio/tyler-nix-Y1drF0Y3Oe0-unsplash.jpeg"
+                                <img src="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg"
                                     class="img-fluid portfolio-image" alt="">
                             </a>
 
@@ -307,6 +317,159 @@
                                 <p class="text-info">Graphic</p>
                             </div>
                         </div>
+                    </div>
+                    <!-- image end -->
+
+                    <!-- image start -->
+                    <div class="col-lg-3 col-12">
+                        <div class="portfolio-thumb mt-5 mt-lg-0 mb-5" data-aos="fade-up">
+                            <a href="images/portfolio/tyler-nix-Y1drF0Y3Oe0-unsplash.jpeg" class="image-popup">
+                                <img src="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg"
+                                    class="img-fluid portfolio-image" alt="">
+                            </a>
+
+                            <div class="portfolio-info">
+                                <h4 class="portfolio-title mb-0">Maki</h4>
+
+                                <p class="text-warning">Website</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-thumb" data-aos="fade-up">
+                            <a href="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg" class="image-popup">
+                                <img src="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg"
+                                    class="img-fluid portfolio-image" alt="">
+                            </a>
+
+                            <div class="portfolio-info">
+                                <h4 class="portfolio-title mb-0">The gig economy</h4>
+
+                                <p class="text-info">Graphic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image end -->
+                    <!-- image start -->
+                    <div class="col-lg-3 col-12">
+                        <div class="portfolio-thumb mt-5 mt-lg-0 mb-5" data-aos="fade-up">
+                            <a href="images/portfolio/tyler-nix-Y1drF0Y3Oe0-unsplash.jpeg" class="image-popup">
+                                <img src="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg"
+                                    class="img-fluid portfolio-image" alt="">
+                            </a>
+
+                            <div class="portfolio-info">
+                                <h4 class="portfolio-title mb-0">Maki</h4>
+
+                                <p class="text-warning">Website</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-thumb" data-aos="fade-up">
+                            <a href="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg" class="image-popup">
+                                <img src="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg"
+                                    class="img-fluid portfolio-image" alt="">
+                            </a>
+
+                            <div class="portfolio-info">
+                                <h4 class="portfolio-title mb-0">The gig economy</h4>
+
+                                <p class="text-info">Graphic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image end -->
+                    <!-- image start -->
+                    <div class="col-lg-3 col-12">
+                        <div class="portfolio-thumb mt-5 mt-lg-0 mb-5" data-aos="fade-up">
+                            <a href="images/portfolio/tyler-nix-Y1drF0Y3Oe0-unsplash.jpeg" class="image-popup">
+                                <img src="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg"
+                                    class="img-fluid portfolio-image" alt="">
+                            </a>
+
+                            <div class="portfolio-info">
+                                <h4 class="portfolio-title mb-0">Maki</h4>
+
+                                <p class="text-warning">Website</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-thumb" data-aos="fade-up">
+                            <a href="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg" class="image-popup">
+                                <img src="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg"
+                                    class="img-fluid portfolio-image" alt="">
+                            </a>
+
+                            <div class="portfolio-info">
+                                <h4 class="portfolio-title mb-0">The gig economy</h4>
+
+                                <p class="text-info">Graphic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image end -->
+
+
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <h1>Play YouTube or Vimeo Videos in Bootstrap 5 Modal</h1>
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-bs-target="#myModal">
+                            Play Video 1 - autoplay
+                        </button>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/IP7uGKgJL8U" data-bs-target="#myModal">
+                            Play Video 2
+                        </button>
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/A-twOC3W558" data-bs-target="#myModal">
+                            Play Video 3
+                        </button>
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-src="https://player.vimeo.com/video/58385453?badge=0" data-bs-target="#myModal">
+                            Play Vimeo Video
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+
+
+                                    <div class="modal-body">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></span>
+                                        </button>
+                                        <!-- 16:9 aspect ratio -->
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="embed-responsive-item" src="" id="video"
+                                                allowscriptaccess="always" allow="autoplay"></iframe>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
 
                 </div>
@@ -533,7 +696,39 @@
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/scrollspy.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
 
+            // Gets the video src from the data-src on each button
+
+            var $videoSrc;
+            $('.video-btn').click(function () {
+                $videoSrc = $(this).data("src");
+            });
+            console.log($videoSrc);
+
+
+
+            // when the modal is opened autoplay it  
+            $('#myModal').on('shown.bs.modal', function (e) {
+
+                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+            })
+
+
+
+            // stop playing the youtube video when I close the modal
+            $('#myModal').on('hide.bs.modal', function (e) {
+                // a poor man's stop video
+                $("#video").attr('src', $videoSrc);
+            })
+
+            // document ready  
+        });
+
+
+    </script>
 </body>
 
 </html>
